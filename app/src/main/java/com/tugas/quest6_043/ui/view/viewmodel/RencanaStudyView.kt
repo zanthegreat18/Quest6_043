@@ -7,3 +7,7 @@ import kotlinx.coroutines.flow.StateFlow
 class RencanaStudyViewModel : ViewModel() {
     private val _krsState = MutableStateFlow(RencanaStudy())
     val  krsStateUi: StateFlow<RencanaStudy> = _krsState.asStateFlow()
+
+    fun setMataKuliah(mkPilihan: String) {
+        _krsState.update { stateMK -> stateMK.copy(namaMk = mkPilihan) }
+    }
