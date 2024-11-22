@@ -35,10 +35,13 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.navigation.NavHostController
 import com.tugas.quest6_043.R
 import com.tugas.quest6_043.data.MataKuliah
 import com.tugas.quest6_043.data.RuangKelas
 import com.tugas.quest6_043.model.Mahasiswa
+import com.tugas.quest6_043.navigation.Halaman
+import com.tugas.quest6_043.ui.widget.DynamicSelectedField
 
 @Composable
 fun RencanaStudyView(
