@@ -11,12 +11,15 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.material3.Button
 import androidx.compose.material3.Text
+import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
+import com.tugas.quest6_043.R
 
+@Composable
 fun Splashview(
     onMulaiButton: () -> Unit,
 ) {
@@ -33,7 +36,7 @@ fun Splashview(
     ) {
         Image(
             painter = painterResource(
-                id = R.drawable.umy
+                id = R.drawable.umylogo
             ),
             contentDescription = "",
             modifier = Modifier.size(150.dp)
